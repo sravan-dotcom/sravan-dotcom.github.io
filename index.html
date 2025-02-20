@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravan K Reddy | Software Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 24px;
+            background-color: #1f1f1f;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background-color: #282828;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 50px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            text-align: left;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .projects, .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #1f1f1f;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sravan K Reddy</h1>
+        <p>Software Developer | AI & Fintech Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Passionate Software Developer with expertise in AI, Web Development, and Cloud Computing. Experienced in Fintech & Anti-Money Laundering applications.</p>
+            <a href="#" class="btn">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <h3>ATS Resume Parser</h3>
+                    <p>Built an AI-powered ATS system to optimize resumes for job applications.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>KYC AML System</h3>
+                    <p>Developed a screening tool to detect financial fraud.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="card"><h3>Python</h3></div>
+                <div class="card"><h3>JavaScript</h3></div>
+                <div class="card"><h3>React.js</h3></div>
+                <div class="card"><h3>AWS & Cloud</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: sravankreddy@example.com</p>
+            <p>LinkedIn: <a href="#" style="color: #007bff;">linkedin.com/in/sravankreddy</a></p>
+            <p>GitHub: <a href="#" style="color: #007bff;">github.com/sravankreddy</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Sravan K Reddy | Built with ❤️</p>
+    </footer>
+
+</body>
+</html>
