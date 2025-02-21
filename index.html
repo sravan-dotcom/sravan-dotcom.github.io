@@ -9,32 +9,42 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', monospace;
         }
         body {
-            background-color: #121212;
-            color: white;
+            background-color: #0d0d0d;
+            color: #00ff00;
             text-align: center;
+            font-size: 18px;
+            overflow-x: hidden;
         }
         header {
             padding: 20px;
-            font-size: 24px;
-            background-color: #1f1f1f;
+            font-size: 28px;
+            background-color: #111;
+            border-bottom: 2px solid #00ff00;
+            text-shadow: 0 0 10px #00ff00;
         }
         nav {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             padding: 15px;
-            background-color: #282828;
+            background-color: #222;
+            flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
         }
         nav a {
-            color: white;
+            color: #00ff00;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
         }
         section {
-            padding: 50px;
+            padding: 50px 20px; /* Add horizontal padding for mobile */
         }
         .container {
             max-width: 900px;
@@ -44,11 +54,16 @@
         .btn {
             display: inline-block;
             margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
+            padding: 12px 24px;
+            background-color: #00ff00;
+            color: #0d0d0d;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff00ff;
+            color: #000;
         }
         .projects, .skills {
             display: grid;
@@ -56,15 +71,52 @@
             gap: 20px;
         }
         .card {
-            background: #1f1f1f;
+            background: rgba(17, 17, 17, 0.8);
             padding: 20px;
             border-radius: 10px;
             text-align: center;
+            border: 2px solid #00ff00;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 255, 0, 1);
         }
         footer {
             margin-top: 30px;
             padding: 20px;
-            background-color: #1f1f1f;
+            background-color: #111;
+            border-top: 2px solid #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 24px; /* Adjust header size for mobile */
+            }
+            nav a {
+                font-size: 16px; /* Adjust font size for mobile */
+            }
+            section {
+                padding: 30px 10px; /* Adjust padding for mobile */
+            }
+            .btn {
+                padding: 10px 20px; /* Adjust button size for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 20px; /* Further adjust header size for small screens */
+            }
+            nav a {
+                font-size: 14px; /* Further adjust font size for small screens */
+            }
+            .container {
+                padding: 10px; /* Reduce container padding for small screens */
+            }
         }
     </style>
 </head>
@@ -72,7 +124,7 @@
 
     <header>
         <h1>Sravan K Reddy</h1>
-        <p>Software Developer | AI & Fintech Enthusiast</p>
+        <p>Software Developer | AI & Fintech Enthusiast | Cybersecurity Curious</p>
     </header>
 
     <nav>
@@ -85,7 +137,7 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Passionate Software Developer with expertise in AI, Web Development, and Cloud Computing. Experienced in Fintech & Anti-Money Laundering applications.</p>
+            <p>Experienced software developer with 4.6 years in AI, Web Development, and Cloud Computing. Worked in fintech, AML/KYC systems, and data-driven applications. Passionate about cybersecurity and ethical hacking.</p>
             <a href="#" class="btn">Download Resume</a>
         </div>
     </section>
@@ -104,6 +156,11 @@
                     <p>Developed a screening tool to detect financial fraud.</p>
                     <a href="#" class="btn">View Project</a>
                 </div>
+                <div class="card">
+                    <h3>Cloud-Based Portfolio</h3>
+                    <p>Designed and deployed a personal portfolio using AWS & GitHub Pages.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
             </div>
         </div>
     </section>
@@ -114,8 +171,10 @@
             <div class="skills">
                 <div class="card"><h3>Python</h3></div>
                 <div class="card"><h3>JavaScript</h3></div>
-                <div class="card"><h3>React.js</h3></div>
+                <div class="card"><h3>SQL</h3></div>
+                <div class="card"><h3>TensorFlow & AI</h3></div>
                 <div class="card"><h3>AWS & Cloud</h3></div>
+                <div class="card"><h3>Cybersecurity </h3></div>
             </div>
         </div>
     </section>
@@ -123,9 +182,11 @@
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email: sravankreddy@example.com</p>
-            <p>LinkedIn: <a href="#" style="color: #007bff;">linkedin.com/in/sravankreddy</a></p>
-            <p>GitHub: <a href="#" style="color: #007bff;">github.com/sravankreddy</a></p>
+            <p>Email: <a href="mailto:sravankreddy4@gmail.com" style="color: #00ff99;">sravankreddy4@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sravankreddy1/" style="color: #00ff99;">linkedin.com/in/sravankreddy1</a></p>
+            <p>GitHub: <a href="https://www.github.com/iosravan" style="color: #00ff99;">github.com/sravankreddy</a></p>
+            <p>HackerRank: <a href="https://www.hackerrank.com/profile/sravankreddych" style="color: #00ff99;">hackerrank.com/profile/sravankreddych</a></p>
+
         </div>
     </section>
 
