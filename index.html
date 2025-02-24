@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sravan K Reddy | Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -65,7 +66,7 @@
             background-color: #ff00ff;
             color: #000;
         }
-        .projects, .skills {
+        .projects, .skills, .certifications {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
@@ -91,6 +92,34 @@
             text-shadow: 0 0 10px #00ff00;
         }
 
+        /* Certifications Specific Styles */
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the badges */
+            gap: 20px; /* Space between badges */
+        }
+        .badge {
+            display: flex;
+            align-items: center;
+            background: rgba(17, 17, 17, 0.8);
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            border: 2px solid #00ff00;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 250px; /* Fixed width for uniformity */
+        }
+        .badge:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 255, 0, 1);
+        }
+        .icon {
+            margin-right: 10px; /* Space between icon and text */
+            font-size: 24px; /* Size of the icon */
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             header {
@@ -104,6 +133,9 @@
             }
             .btn {
                 padding: 10px 20px; /* Adjust button size for mobile */
+            }
+            .badge {
+                width: auto; /* Allow badges to have flexible width on smaller screens */
             }
         }
 
@@ -131,14 +163,15 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Experienced software developer with 4.6 years in AI, Web Development, and Cloud Computing. Worked in fintech, AML/KYC systems, and data-driven applications. Passionate about cybersecurity and ethical hacking.</p>
-            <a href="#" class="btn">Download Resume</a>
+            <p>🔍 Passionate Software Developer with 4.6 years of hands-on experience in AI, Web Development, and Cloud Computing. I thrive at the intersection of technology and finance, having contributed to innovative fintech solutions and AML/KYC systems that tackle real-world challenges. My journey is fueled by a relentless curiosity for cybersecurity and ethical hacking, as I strive to build secure and efficient applications that make a difference.</p>
+            <a href="#" class="btn">Download My Resume</a>
         </div>
     </section>
 
@@ -147,18 +180,18 @@
             <h2>Projects</h2>
             <div class="projects">
                 <div class="card">
-                    <h3>ATS Resume Parser</h3>
-                    <p>Built an AI-powered ATS system to optimize resumes for job applications.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="card">
                     <h3>KYC AML System</h3>
-                    <p>Developed a screening tool to detect financial fraud.</p>
+                    <p>Developed a screening tool to detect financial fraud by analyzing customer data and identifying suspicious activities, improving compliance with regulatory standards.</p>
                     <a href="#" class="btn">View Project</a>
                 </div>
                 <div class="card">
-                    <h3>Cloud-Based Portfolio</h3>
-                    <p>Designed and deployed a personal portfolio using AWS & GitHub Pages.</p>
+                    <h3>AI Chatbot</h3>
+                    <p>Created a natural language processing (NLP) chatbot that provides instant customer support, leveraging machine learning algorithms for better user engagement and satisfaction.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Cybersecurity Awareness Tool</h3>
+                    <p>Designed a tool to educate users on cybersecurity best practices, incorporating quizzes and interactive elements to enhance user awareness and reduce risks.</p>
                     <a href="#" class="btn">View Project</a>
                 </div>
             </div>
@@ -174,7 +207,39 @@
                 <div class="card"><h3>SQL</h3></div>
                 <div class="card"><h3>TensorFlow & AI</h3></div>
                 <div class="card"><h3>AWS & Cloud</h3></div>
-                <div class="card"><h3>Cybersecurity </h3></div>
+                <div class="card"><h3>Cybersecurity</h3></div>
+                <div class="card"><h3>Machine Learning</h3></div>
+                <div class="card"><h3>Data Analysis</h3></div>
+                <div class="card"><h3>DevOps</h3></div>
+                <div class="card"><h3>Blockchain</h3></div>
+                <div class="card"><h3>Agile Methodologies</h3></div>
+                <div class="card"><h3>API Development</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <a href="link_to_data_science_certificate" class="badge">
+                    <div class="icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span>Applied Data Science with Python - Level 2 (Issued by IBM)</span>
+                </a>
+                <a href="link_to_bigdata_hadoop_certificate" class="badge">
+                    <div class="icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span>Big Data Hadoop (Issued by IBM)</span>
+                </a>
+                <a href="link_to_fortinet_certificate" class="badge">
+                    <div class="icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span>Fortinet Certified Associate (FCA) (Issued by IBM)</span>
+                </a>
             </div>
         </div>
     </section>
@@ -186,7 +251,6 @@
             <p>LinkedIn: <a href="https://www.linkedin.com/in/sravankreddy1/" style="color: #00ff99;">linkedin.com/in/sravankreddy1</a></p>
             <p>GitHub: <a href="https://www.github.com/iosravan" style="color: #00ff99;">github.com/sravankreddy</a></p>
             <p>HackerRank: <a href="https://www.hackerrank.com/profile/sravankreddych" style="color: #00ff99;">hackerrank.com/profile/sravankreddych</a></p>
-
         </div>
     </section>
 
